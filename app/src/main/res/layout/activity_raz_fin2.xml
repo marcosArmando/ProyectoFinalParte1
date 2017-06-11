@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_raz_fin2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/cuentas"
+    tools:context="com.yucatancorp.razonamientofinanciero.RazFin2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/activos"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/margen">
+
+            <TextView
+                android:id="@+id/encabezadoactivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/encabezadoactivo"
+                android:textSize="@dimen/letrasEncabezados"
+                android:layout_gravity="center"
+                android:textColor="@color/texto"/>
+
+
+            <TextView
+                android:id="@+id/activocirculante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/activocirculante"
+                android:layout_gravity="center"
+                android:textColor="@color/texto"/>
+
+            <EditText
+                android:id="@+id/caja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/caja"
+                android:background="@color/activos"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/bancos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/bancos"
+                android:background="@color/activos"
+                android:layout_marginTop="@dimen/margen"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/inversionesTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/inversionesTemp"
+                android:background="@color/activos"
+                android:layout_marginTop="@dimen/margen"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/inventario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/inventario"
+                android:background="@color/activos"
+                android:layout_marginTop="@dimen/margen"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/clientes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/clientes"
+                android:background="@color/activos"
+                android:layout_marginTop="@dimen/margen"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/deudoresDiversos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/deudoresDiversos"
+                android:background="@color/activos"
+                android:layout_marginTop="@dimen/margen"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/activoFijo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/activoFijo"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/padding2osencabe"
+                android:textColor="@color/texto"/>
+
+            <EditText
+                android:id="@+id/terrenos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/terrenos"
+                android:background="@color/activos"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/edificios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/edificios"
+                android:background="@color/activos"
+                android:layout_marginTop="@dimen/margen"
+                android:inputType="numberDecimal"/>
+
+
+            <EditText
+                android:id="@+id/mobiliarioyEquipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/mobiliarioyEquipo"
+                android:background="@color/activos"
+                android:layout_marginTop="@dimen/margen"
+                android:inputType="numberDecimal"/>
+
+            <Button
+                android:id="@+id/botonSecundario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/boton2"
+                android:textSize="@dimen/botones2act"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/capitalypasivo"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margen">
+
+            <TextView
+                android:id="@+id/encabezadoPasivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/encabezadoPasivo"
+                android:textSize="@dimen/letrasEncabezados"
+                android:textColor="@color/texto"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/PasivoCortoPlazo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/PasivoCortoPlazo"
+                android:layout_gravity="center"
+                android:textColor="@color/texto"/>
+
+            <EditText
+                android:id="@+id/proveedores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/proveedores"
+                android:background="@color/pasivos"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/documentosXPagar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/documentosXPagar"
+                android:background="@color/pasivos"
+                android:layout_marginTop="@dimen/margen"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/acreedoresDiversos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/acreedoresDiversos"
+                android:background="@color/pasivos"
+                android:layout_marginTop="@dimen/margen"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/anticipoDeClientes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/anticipoDeClientes"
+                android:background="@color/pasivos"
+                android:layout_marginTop="@dimen/margen"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/impuestosPorPagar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/impuestosPorPagar"
+                android:background="@color/pasivos"
+                android:layout_marginTop="@dimen/margen"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/pasivoLargoPlazo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pasivoLargoPlazo"
+                android:textColor="@color/texto"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margen"
+                android:paddingTop="@dimen/padding2osencabe"/>
+
+            <EditText
+                android:id="@+id/hipotecas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hipotecas"
+                android:background="@color/pasivos"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/deudasLargoPlazo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/deudasLargoPlazo"
+                android:background="@color/pasivos"
+                android:layout_marginTop="@dimen/margen"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/capitalContable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/capitalContable"
+                android:textSize="@dimen/letrasEncabezados"
+                android:textColor="@color/texto"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/padding2osencabe"/>
+
+            <EditText
+                android:id="@+id/capitalSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/capitalSocial"
+                android:background="@color/capital"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/utilidadesRetenidas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/utilidadesRetenidas"
+                android:background="@color/capital"
+                android:layout_marginTop="@dimen/margen"
+                android:inputType="numberDecimal"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/boton3"
+                android:textSize="@dimen/botones2act"
+                android:textAllCaps="false"
+                android:id="@+id/botonTerciario"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
