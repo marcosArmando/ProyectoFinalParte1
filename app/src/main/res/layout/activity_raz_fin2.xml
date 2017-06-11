@@ -144,15 +144,7 @@
                 android:layout_marginTop="@dimen/margen"
                 android:inputType="numberDecimal"/>
 
-            <Button
-                android:id="@+id/botonSecundario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_gravity="center"
-                android:text="@string/boton2"
-                android:textSize="@dimen/botones2act"
-                android:textAllCaps="false"/>
+
 
         </LinearLayout>
 
